@@ -30,7 +30,6 @@ class Searchbar extends Component {
           <button type="submit" className="SearchForm-button">
             <span className="SearchForm-button-label">Search</span>
           </button>
-
           <input
             onChange={this.handleChangeQuery}
             value={this.state.query}

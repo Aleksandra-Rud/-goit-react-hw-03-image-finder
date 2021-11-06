@@ -87,7 +87,6 @@ class App extends Component {
         {isLoading && <Loader />}
         <ImageGallery images={images} onOpenModal={this.onOpenModal} />
         {images.length > 0 && <Button onClick={this.addPicture} />}
-
         {showModal && (
           <Modal onClick={this.toggleModal}>
             <img src={largeImage} alt="" />

@@ -5,14 +5,13 @@ import ImageGalleryItem from "./ImageGalleryItem";
 function ImageGallery({ images, onOpenModal }) {
   return (
     <ul className="ImageGallery">
-      {images.length &&
-        images.map((image) => (
-          <ImageGalleryItem
-            image={image}
-            key={image.id}
-            onOpenModal={onOpenModal}
-          />
-        ))}
+      {images.map((image) => (
+        <ImageGalleryItem
+          image={image}
+          key={image.id}
+          onOpenModal={onOpenModal}
+        />
+      ))}
     </ul>
   );
 }
