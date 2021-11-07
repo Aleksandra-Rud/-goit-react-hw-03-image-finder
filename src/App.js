@@ -12,7 +12,7 @@ class App extends Component {
     query: "",
     page: 1,
     images: [],
-    // filter: "",
+    filter: "",
     showModal: false,
     largeImage: "",
     error: null,
@@ -24,6 +24,7 @@ class App extends Component {
     if (prevSearchQuery !== nextSearchQuery) {
       this.addPicture();
     }
+
     if (prevState.page !== this.state.page) {
       window.scrollTo({
         top: document.documentElement.scrollHeight,
